@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--Meta Information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kanyingi">
+    <meta name="description" content="A Project for Weather">
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Hero's Section-->
+    <header>
+        <h1>WEATHER APPLICATION</h1>
+    </header>
+    <!--Input Location of the Area to be searched-->
+    <div id="search-form">
+        <input type="search" placeholder="Enter City Name" id="search-Input" required autocomplete="off">
+        <br>
+        <br>
+        <button id="search-Btn">Search</button>
+    </div>
+    <main id="app-container">
+        <div id="location">
+            <p>----------</p>
+        </div>
+        <!--To Display the Temperature of the Area-->
+        <div id="temp">
+            <img id="temp-Icon" src="sun.svg" alt="" width="100" height="100">
+            <p>
+                <span id="temp-value">--------</span>
+                <span id="temp-unit">&#176c</span>
+            </p>
+
+        </div>
+        <!--To Display Kind of Climate-->
+        <div id="climate">
+            <p>--------</p>
+        </div>
+
+    </main>
+    <!--Link to JS-->
+    <script src="weather.js"></script>
+</body>
+</html>
